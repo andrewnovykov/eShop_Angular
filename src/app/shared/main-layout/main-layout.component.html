@@ -1,2 +1,18 @@
-<p>main-layout works!</p>
+<nav class="navbar bg-dark">
+  <h2>Angular Shop</h2>
+  <ul>
+    <li routerLinkActive="active">
+      <a href="#">Phone</a>
+    </li>
+    <li>
+      <a href="#">Tablet</a>
+    </li>
+    <li>
+      <a href="#">Laptop</a>
+    </li>
+    <li>
+      <a [routerLink]="['/cart']">Cart</a>
+    </li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>
